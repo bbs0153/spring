@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="systemMonitor" class="com.bit.exam08.SystemMonitor">
+
+		<property name="peroidTime" value="10"/>
+		<property name="sender">
+			<bean class="com.bit.exam08.SmsSender">
+				<property name="from" value="성인"/>
+				<property name="to" value="연주"/>
+			</bean>
+		</property>
+	</bean>
+</beans>

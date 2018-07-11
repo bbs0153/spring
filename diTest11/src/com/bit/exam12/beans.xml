@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!-- 
+ <bean id="smsSender2" class="com.bit.exam12.SmsSender" p:from="연주" p:to="성인"/>
+ -->
+<bean id="sender" class="com.bit.exam12.SmsSender" p:from="성인" p:to="건우"/>
+<bean id="systemMonitor" class="com.bit.exam12.SystemMonitor" autowire="byName" p:peroidTime="1"/>
+</beans>
